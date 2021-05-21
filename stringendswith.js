@@ -38,3 +38,10 @@ function solution(str, ending){
 }
 
 //https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d/train/javascript
+
+//Better solution:
+function solution(str, ending){
+  return str.endsWith(ending);
+}
+
+//I did not know of the existance of .endsWith but it just returns true or false if the string ends with the provided parameter
