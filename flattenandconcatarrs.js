@@ -12,3 +12,9 @@ function flattenAndSort(array) {
   //return the flatArr
   return flatArr;
 }
+
+
+//below is the fastest solution. similar to what I did but in one line.
+function flattenAndSort(array) {
+  return [].concat(...array).sort((a,b) => a - b);
+}
