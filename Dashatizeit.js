@@ -32,3 +32,12 @@ function dashatize(num) {
 }
 
 //https://www.codewars.com/kata/58223370aef9fc03fd000071/train/javascript
+
+//smart person's solution
+function dashatize(num) {
+  return num.toString().
+    replace(/([13579])/g, '-$1-'). // dashes around odd digits
+    replace(/\-+/g, '-'). // replace multiple dashes by one dash
+    replace(/^\-/, ''). // remove starting dash
+    replace(/\-$/, ''); // remove ending dash
+}
